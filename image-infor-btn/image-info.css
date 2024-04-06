@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image-content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.image-content .images{
+    padding: 5px;
+}
+
+.image-content .images img{
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.images .text {
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 255, 255, 0.345);
+    padding: 3px 5px 3px 5px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-align: justify;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.images .text .image-reference{
+    text-decoration: none;
+    color: blue;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    padding: 10px 60px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.newback{
+    background-color: rgb(12, 12, 19);
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 2px;
+    
+}
+ nav a:hover{
+    background-color: cyan;
+    transition: all .5s ease;
+ }
+
+nav a .arrow{
+    margin-right: 5px;
+    animation: animate 1s linear infinite;
+    color: red;
+}
+
+@keyframes animate{
+    from{color: white; transform: translateX(8px);}
+    to{color: red; transform: translateX(2px);}
+}

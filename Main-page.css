@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    padding: 10px 20px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.newback{
+    background-color: rgb(12, 12, 19);
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.main-page-container{
+   position: relative;
+   text-align: center;
+}
+
+.main-page-container video{
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-page-container .content{
+   position: absolute;
+   top: 90px;
+   right: 340px;
+    
+    
+}
+
+.content h2{
+    color: white;
+    font-family: verdana;
+    font-weight: 700;
+
+}
+
+.images-gallary{
+    width: 100%;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: "box1 box2 box2"
+        "box1 box3 box3";
+    background-color: black;
+}
+
+.image-content{
+    width: 100%;
+    padding: 50px 10px 20px 10px;
+    left: 0;
+    bottom: 1px;
+    position: relative;
+    
+}
+
+.image-content:hover .content-text{
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.image-content .image1 img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.image-content .image1 img:hover{
+    opacity: .6;
+}
+.images-gallary .image-content:first-child{
+    grid-area: box1;
+}
+
+.image-content:nth-child(2){
+    grid-area: box2;
+
+}
+
+.image-content:last-child{
+    grid-area: box3;
+}
+
+.image1{
+    width: 100%;
+    position: relative;
+}
+
+.content-text{
+    width: fit-content;
+    color: white;
+    position: absolute;
+    left: 15px;
+    font-weight: 700;
+    word-spacing: 4px;
+    letter-spacing: 1.3px;
+    bottom: 30px;
+    opacity: 0;
+}
+
+.btn-contents{
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    left: 25px;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 700;
+    word-spacing: 4px;
+    letter-spacing: 1.3px;
+    opacity: 0;
+    
+}
+ /* //FOR BUTTON AND TEXT CONTENT */
+.image-info{
+    width: fit-content;
+
+}
+
+.btn-contents .btn{
+    width: 70px;
+    padding: 6px;
+    border: 2px solid rgb(0, 217, 255);
+    background-color: white;
+    border-radius: 6px;
+    font-weight: 700;
+    z-index: 3;
+    position: relative;
+}
+
+.btn-contents button::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(9, 246, 250, 0.756);
+    left: 0;
+    top: 0;
+    opacity: 0;
+    border-radius: 6px;
+}
+
+.btn-contents button:hover::after{
+    width: 100%;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+.image-content:hover .btn-contents{
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+
+
+form{
+    background-image: url(assets/images.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 08;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(17, 83, 86, 0.896);
+}
+
+form .contact-email{
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.in-btn input{
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+
+}
+
+.in-btn button{
+    padding: 5px;
+    margin-left: -28px;
+    background-color: cyan;
+    outline: none;
+    border: none;
+    border-radius: 0 15px 15px 0;
+}
+
+
+footer .footer-content {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 3px 10px 3px;
+}
+
+footer .footer-content .rights{
+    width: 100%;
+    color: white;
+    text-align: justify;
+    overflow-wrap: break-word;
+    padding: 0 5px 0 5px;
+    
+}
+
+.rights a{
+    color: rgba(41, 28, 217, 0.766);
+    text-decoration: none;
+    font-style: italic;
+}
+
+.footer-content .coryright-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.coryright-content .copy{
+    width: 70px;
+    text-align: justify;
+    color: white;
+}
+
+
+

@@ -1,0 +1,106 @@
+@media (max-width: 700px) {
+    
+    html{
+    scroll-behavior: smooth;
+    }
+    nav{
+        padding: 20px 0;
+        
+    }
+
+    body{
+        margin: 0;
+    }
+
+    nav a{
+        width: 100%;
+        font-size: 15px;
+        margin-left: 12px;
+        
+    }
+
+    .main-page-container{
+        background-color: rgba(15, 235, 231, 0.508);
+    }
+
+    .main-page-container video{
+       height: 100vh;
+    }
+
+    .content{
+        position: relative;
+        width: 100%;
+    }
+
+   .content h2{
+    width: 100%;
+    position: absolute;
+    right: -350px;
+    top: 120px;
+    color: white;
+    font-size: 15px;
+
+    
+    }
+
+    .images-gallary{
+        grid-template-columns: 1fr;
+      grid-template-areas: "box1"
+      "box2"
+      "box3";
+      padding: 4px;
+      
+        
+    }
+
+    .images-gallary .image1 img{
+        border-radius: 10px;
+    }
+
+    form{
+        width: 100%;
+        padding: 3px;
+        
+    }
+
+    form .contact-email{
+        font-size: 20px;
+    }
+
+    footer{
+       height: 100vh; 
+    }
+
+    footer .footer-content{
+        display: flex;
+        justify-content: space-between;
+        
+
+    }
+
+    footer .footer-content .rights{
+        width: 100%;
+        overflow-wrap: break-word;
+        text-align: justify;
+        line-height: 1.4rem;
+    }
+
+    footer{
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .coryright-content{
+        padding: 50px 10px 0px 10px;
+    }
+
+    .btn-contents{
+     gap: 2px;
+    }
+
+    .btn-contents .btn{
+        padding: 5px;
+    }
+
+    
+}

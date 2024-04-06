@@ -1,0 +1,14 @@
+@media (max-width: 700px){
+    nav{
+        padding: 10px 12px;
+    }
+
+    .image-content .images .text{
+        font-size: 17px ;
+        line-height: 16px;
+        word-spacing: 0;
+        letter-spacing: 0;
+        background-color: rgba(0, 255, 255, 0.271);
+        text-indent: 35px;
+    }
+}
